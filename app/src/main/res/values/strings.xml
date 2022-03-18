@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="title_game">Memory Game</string>
+    <string name="menu_start">Start Game</string>
+    <string name="title_names">Anthony Dang, Raman Clair, Tenzin Dekhang</string>
+    <string name="menu_leaderboard">Leaderboard</string>
+    <string name="menu_exit">Exit</string>
+    <string name="game_time">"Time Elapsed: "</string>
+    <string name="game_remainingCards">"Cards Left: "</string>
+</resources>

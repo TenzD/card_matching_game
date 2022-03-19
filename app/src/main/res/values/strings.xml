@@ -7,4 +7,18 @@
     <string name="menu_exit">Exit</string>
     <string name="game_time">"Time Elapsed: "</string>
     <string name="game_remainingCards">"Cards Left: "</string>
+    <string name="input_name">Input Name</string>
+    <string name="leaderboard_spots">1\n2\n3\n4\n5\n6\n7</string>
+    <string name="leaderboardExitButton">Back</string>
+    <string name="select_a_difficulty">Select A Difficulty</string>
+    <string name="description_of_difficulty">Description of difficulty</string>
+    <string name="difficulty1">Easy</string>
+    <string name="difficulty2">Medium</string>
+    <string name="difficulty3">Hard</string>
+    <string name="you_matched_all_the_card">You matched all the card!</string>
+    <string name="user_score">User Score</string>
+    <string name="game_time_elapsed">Game Time Elapsed</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="end_screen_exit">Exit</string>
+    <string name="end_screen_play_again">Play Again</string>
 </resources>

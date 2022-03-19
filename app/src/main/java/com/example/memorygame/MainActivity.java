@@ -9,7 +9,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonEasy;
+    private Button buttonStart;
+    private Button buttonLeader;
     private Button buttonExit ;
 
     @Override
@@ -17,16 +18,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonEasy = findViewById(R.id.button_easy_game);
-        buttonEasy.setOnClickListener(new View.OnClickListener() { // gives a button with the id button_Easy_game an onClick functionality
+        //Start Game Button
+        buttonStart = findViewById(R.id.button_start_game);
+        buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, GameActivity.class);
+                Intent intent = new Intent(MainActivity.this, NameInput.class);
                 startActivity(intent); // starts a new activity after a button press
             }
         });
 
+        //Leaderboard button
+        buttonLeader = findViewById(R.id.button_start_leaderboard);
+        buttonLeader.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Leaderboard.class);
+                startActivity(intent);
+            }
+        });
 
+        //Exit Button
         buttonExit = findViewById(R.id.button_exit);
         buttonExit.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class NameInput extends AppCompatActivity {
 
     private Button buttonNext;
+    private static String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +22,14 @@ public class NameInput extends AppCompatActivity {
         buttonNext.setOnClickListener(new View.OnClickListener() { //add something to check if name is not null,
             @Override                                               //and has some sort of value inside of it
             public void onClick(View view) {
+                userName = ((TextView)findViewById(R.id.name_input)).getText().toString();
                 Intent intent = new Intent(NameInput.this, DifficultySelection.class);
                 startActivity(intent);
             }
         });
+    }
+
+    public static String getName() {
+        return userName;
     }
 }

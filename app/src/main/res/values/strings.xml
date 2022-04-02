@@ -11,11 +11,11 @@
     <string name="leaderboard_spots">1\n2\n3\n4\n5\n6\n7</string>
     <string name="leaderboardExitButton">Back</string>
     <string name="select_a_difficulty">Select A Difficulty</string>
-    <string name="description_of_difficulty">Description of difficulty</string>
+    <string name="description_of_difficulty">Easy - 4x2 Medium - 4x3 Hard - 4x4</string>
     <string name="difficulty1">Easy</string>
     <string name="difficulty2">Medium</string>
     <string name="difficulty3">Hard</string>
-    <string name="you_matched_all_the_card">You matched all the card!</string>
+    <string name="you_matched_all_the_card">You matched all the cards!</string>
     <string name="user_score">User Score</string>
     <string name="game_time_elapsed">Game Time Elapsed</string>
     <string name="leaderboard">Leaderboard</string>

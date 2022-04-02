@@ -11,6 +11,7 @@ public class DifficultySelection extends AppCompatActivity {
     private Button buttonEasy;
     private Button buttonMedium;
     private Button buttonHard;
+    private static String difficulty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class DifficultySelection extends AppCompatActivity {
         buttonEasy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                difficulty = "easy";
                 Intent intent = new Intent(DifficultySelection.this, GameBoard.class);
                 startActivity(intent);
             }
@@ -33,6 +35,7 @@ public class DifficultySelection extends AppCompatActivity {
         buttonMedium.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                difficulty = "medium";
                 Intent intent = new Intent(DifficultySelection.this, GameBoard.class);
                 startActivity(intent);
             }
@@ -43,9 +46,15 @@ public class DifficultySelection extends AppCompatActivity {
         buttonHard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                difficulty = "hard";
                 Intent intent = new Intent(DifficultySelection.this, GameBoard.class);
                 startActivity(intent);
             }
         });
     }
+
+    public static String  getDifficulty() {
+        return difficulty;
+    }
+
 }

@@ -3,15 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/antho/AndroidStudioProjects/MemoryGame/app/src/main/res/layout/activity_difficulty_selection.xml" value="0.3020833333333333" />
+        <entry key="..\:/Users/antho/AndroidStudioProjects/MemoryGame/app/src/main/res/layout/activity_end_screen.xml" value="0.3020833333333333" />
         <entry key="..\:/Users/antho/AndroidStudioProjects/MemoryGame/app/src/main/res/layout/activity_game.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/antho/AndroidStudioProjects/MemoryGame/app/src/main/res/layout/activity_game_board.xml" value="0.3020833333333333" />
+        <entry key="..\:/Users/antho/AndroidStudioProjects/MemoryGame/app/src/main/res/layout/activity_leaderboard.xml" value="0.25" />
         <entry key="..\:/Users/antho/AndroidStudioProjects/MemoryGame/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/skksc/AndroidStudioProjects/card_matching_game/app/src/main/res/layout/activity_difficulty_selection.xml" value="0.21331521739130435" />
-        <entry key="..\:/Users/skksc/AndroidStudioProjects/card_matching_game/app/src/main/res/layout/activity_end_screen.xml" value="0.21331521739130435" />
-        <entry key="..\:/Users/skksc/AndroidStudioProjects/card_matching_game/app/src/main/res/layout/activity_game.xml" value="0.4" />
-        <entry key="..\:/Users/skksc/AndroidStudioProjects/card_matching_game/app/src/main/res/layout/activity_game_board.xml" value="0.21331521739130435" />
-        <entry key="..\:/Users/skksc/AndroidStudioProjects/card_matching_game/app/src/main/res/layout/activity_leaderboard.xml" value="0.21331521739130435" />
-        <entry key="..\:/Users/skksc/AndroidStudioProjects/card_matching_game/app/src/main/res/layout/activity_main.xml" value="0.4" />
-        <entry key="..\:/Users/skksc/AndroidStudioProjects/card_matching_game/app/src/main/res/layout/activity_name_input.xml" value="0.4" />
+        <entry key="..\:/Users/antho/AndroidStudioProjects/MemoryGame/app/src/main/res/layout/activity_name_input.xml" value="0.20520833333333333" />
       </map>
     </option>
   </component>

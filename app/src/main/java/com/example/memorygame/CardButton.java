@@ -2,7 +2,6 @@ package com.example.memorygame;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.widget.Button;
 import android.widget.GridLayout;
 
 import androidx.core.content.ContextCompat;
@@ -28,7 +27,7 @@ public class CardButton extends androidx.appcompat.widget.AppCompatButton {
         cardId = cId;
 
         frontImage = ContextCompat.getDrawable(context, cId);
-        backImage = ContextCompat.getDrawable(context, R.drawable.card_back);
+        backImage = ContextCompat.getDrawable(context, R.drawable.card_back1);
         setBackground(backImage);
 
         GridLayout.LayoutParams layoutParams = new GridLayout.LayoutParams(GridLayout.spec(r), GridLayout.spec(c));

@@ -44,16 +44,6 @@ public class GameBoard extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_board);
 
-        removeMe = findViewById(R.id.remove_me);
-        removeMe.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                timerTask.cancel();
-                Intent intent = new Intent(GameBoard.this, EndScreen.class);
-                startActivity(intent);
-            }
-        });
-
         score = 0;
 
         timerText = findViewById(R.id.timer);
@@ -136,7 +126,8 @@ public class GameBoard extends AppCompatActivity implements View.OnClickListener
     }
 
     private void addScore() {
-        score += (100-time > 0 ? 100 - time : 10); // less score is rewarded overtime
+        double modifier = (DifficultySelection.getDifficulty() == "easy" ? 1 : DifficultySelection.getDifficulty() == "medium" ? 1.2 : 1.4);
+        score += ((int) ((100-time > 0 ? 100 - time : 10) + modifier)) * 1.0; // less score is rewarded overtime
     }
 
     public static String getScore() { return score + ""; }
@@ -225,7 +216,7 @@ public class GameBoard extends AppCompatActivity implements View.OnClickListener
                     selectedCard2 = null;
                     occupied = false;
                 }
-            }, 250); // delays the card flip
+            }, 400); // delays the card flip
         }
     }
 

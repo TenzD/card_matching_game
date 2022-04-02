@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class EndScreen extends AppCompatActivity {
     private Button buttonPlayAgain;

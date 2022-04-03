@@ -23,8 +23,10 @@ public class NameInput extends AppCompatActivity {
             @Override                                               //and has some sort of value inside of it
             public void onClick(View view) {
                 userName = ((TextView)findViewById(R.id.name_input)).getText().toString();
-                Intent intent = new Intent(NameInput.this, DifficultySelection.class);
-                startActivity(intent);
+                if(!userName.equals("")){ //a username must be entered
+                    Intent intent = new Intent(NameInput.this, DifficultySelection.class);
+                    startActivity(intent);
+                }
             }
         });
     }

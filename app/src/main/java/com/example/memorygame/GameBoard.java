@@ -7,18 +7,13 @@ import android.os.Bundle;
 
 import android.os.Handler;
 import android.view.View;
-import android.widget.Button;
-import android.widget.GridLayout;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class GameBoard extends AppCompatActivity implements View.OnClickListener {
-    private Button removeMe;
 
     private TextView cardText;
 

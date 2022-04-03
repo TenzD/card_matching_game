@@ -10,13 +10,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
 public class EndScreen extends AppCompatActivity {
     private Button buttonPlayAgain;
     private Button buttonLeaderboard;
     private Button buttonExit;
-    private static ArrayList<Score> scores = new ArrayList<>();
+    private static ArrayList<Score> scores = new ArrayList<Score>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +58,7 @@ public class EndScreen extends AppCompatActivity {
     }
 
     public static ArrayList<Score> getScores() {
+        Collections.sort(scores, Collections.reverseOrder());
         return scores;
     }
-
 }

@@ -1,23 +1,29 @@
 package com.example.memorygame;
 
-public class Score {
+public class Score implements Comparable<Score>{
     private String score;
     private String name;
 
+
     public Score(String n, String s) {
-        score = s;
-        name = n;
+        this.score = s;
+        this.name = n;
     }
     public Score(Score s) {
-        score = s.getScore();
-        name = s.getName();
+        this.score = s.getScore();
+        this.name = s.getName();
     }
 
     public String getScore() {
-        return score;
+        return this.score;
     }
     public String getName() {
-        return name;
+        return this.name;
     }
 
+    public int compareTo(Score other) {
+        double tempThisScore = Double.parseDouble(this.score);
+        double tempOtherScore = Double.parseDouble(other.score);
+        return Double.compare(tempThisScore, tempOtherScore);
+    }
 }

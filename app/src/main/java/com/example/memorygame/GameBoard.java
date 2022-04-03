@@ -168,7 +168,7 @@ public class GameBoard extends AppCompatActivity implements View.OnClickListener
             return;
         }
 
-        if(selectedCard1.getCardId() == card.getCardId()) {
+        if(selectedCard1.getCardId() == card.getCardId() && (selectedCard1.row != card.row || selectedCard1.column != card.column)) {
             selectedCard2 = card;
             selectedCard2.flip();
 
